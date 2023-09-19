@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book details</title>
+</head>
+<body>
+    <h1>New Added book</h1>
+    <table>
+        <tr>
+            <th>ID:</th>
+            <td>{{ book.id }}</td>
+        </tr>
+        <tr>
+            <th>Title:</th>
+            <td>{{ book.title }}</td>
+        </tr>
+        <tr>
+            <th>Author:</th>
+            <td>{{ book.author.name }}</td>
+        </tr>
+        <tr>
+            <th>Genre:</th>
+            <td>{{ book.genre.name }}</td>
+        </tr>
+    </table>
+    <p><a href="{{url_for('add_book') }}">Add another book</a></p>
+</body>
+</html>
